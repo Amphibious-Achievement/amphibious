@@ -1,0 +1,58 @@
+.idlefield {
+	color: #777777;
+}
+.focusfield {
+	color: #000000;
+}
+input[type="text"] {
+	margin-left: 2px;
+	margin-right: 2px;
+	border-width: 1px;
+	padding: 2px;
+	font-size: 11px;
+	height: 13px;
+	width: 169px;
+	display: inline-block;
+}
+textarea {
+	font-family: 'Lucida Grande';
+	line-height: 13px;
+	font-size: 11px;
+}
+
+#contactwrap .pagecolumn1 {
+	width: 23%;
+}
+#contactwrap .pagecolumn2 {
+	width: 77%;
+}
+#contactwrap textarea {
+	width: 511px;
+	height: 130px;
+}
+#contactwrap .blurb {
+	border-bottom: 1px solid #0064A9;
+	padding-bottom: 10px;
+}
+#contactwrap input {
+	margin-top: 19px;
+	margin-bottom: 19px;
+}
+
+#joinwrap .blurb {
+	width: auto;
+}
+#joinwrap .pagecolumn1 {
+	width: 23%;
+}
+#joinwrap .pagecolumn2 {
+	width: 77%;
+}
+#joinwrap input {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#joinwrap textarea {
+	width: 371px;
+	height: 52px;
+}

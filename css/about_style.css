@@ -1,0 +1,93 @@
+#aboutwrap {
+}
+#aboutwrap .blurb {
+	width: 320px;
+}
+#aboutwrap .pagecolumn1 {
+	width: 40.9%;
+}
+#aboutwrap .pagecolumn2 {
+	width: 58.9%;
+}
+.picrow {
+	height: 158px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.biophoto {
+	width: 148px;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	float: right;
+}
+.halfbiospacer {
+	width: 75px;
+	height: 150px;
+	margin: auto 2px;
+	border: 0px;
+	float: right;
+}
+.inactivebiophoto {
+	border: 1px solid #0064A9;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 4px;
+}
+.activebiophoto {
+	border-width: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-image: url(../pics/photo_border.png) 25% round;
+	-webkit-border-image: url(../pics/photo_border.png) 25% round;
+	-moz-border-image: url(../pics/photo_border.png) 25% round;
+}
+.subtitle {
+	text-align: left;
+	text-align: -webkit-left;
+	text-align: -moz-left;
+	font-size: x-large;
+	display: block;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-right: 140px;
+	border-bottom: 1px solid #0064A9;
+	margin-top: 20px;
+}
+.bio {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 35px;
+	display: none;
+}
+.biotitle {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #0064A9;
+	font-variant: small-caps;
+	margin-right: 30px;
+
+}
+.biocontent {
+	font-size: smaller;
+	line-height: 150%;
+}
+.roman {
+	width: 40px;
+	display: inline-block;
+	clear: left;
+	float: left;
+}
+.romantext {
+	display: inline-block;
+	float: left;
+	width: 280px;
+}
+.romanwrap {
+	margin: 20px auto;
+}
+#aboutwrap .divider {
+	height: 720px;
+}

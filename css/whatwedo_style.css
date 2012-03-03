@@ -1,0 +1,55 @@
+body{
+	
+}
+#videoheader {
+	border-bottom: 1px solid #0064A9;
+	text-align: center;
+	padding-bottom: 20px;
+	margin: 30px auto 10px auto;
+	font-variant: small-caps;
+	font-size: xx-large;
+}
+#whatwedowrap .videowrap {
+	margin: 20px;
+	clear: both;
+	margin-bottom: 50px;
+}
+.videobox {
+	height: 303px;
+	width: 354px;
+	margin: auto;
+	border: 1px solid #0064A9;
+	text-align: center;
+}
+.videotitle {
+	text-align: center;
+	margin: 20px;
+	margin-top: 50px;
+}
+.sometext {
+	color: white;
+	padding-top: 150px;
+}
+#whatwedowrap .pagecolumn1 {
+	width: 49.9%;
+}
+#whatwedowrap .pagecolumn2 {
+	width: 49.9%;
+}
+.subtitle {
+	text-align: left;
+	text-align: -webkit-left;
+	text-align: -moz-left;
+	font-size: x-large;
+	display: block;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-right: 140px;
+	border-bottom: 1px solid #0064A9;
+	margin-top: 20px;
+}
+#whatwedowrap .divider {
+	height: 600px;
+}

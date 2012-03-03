@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+	<title>Amphibious Achievement | Secure Volunteer Page</title>
+	<meta name="generator" content="Studio 3 http://aptana.com/"></meta>
+	<meta name="author" content="Turner Bohlen"></meta>
+	<script type="text/javascript">
+		// function that makes a certain tab active, showing its page etc.
+		function make_active(name) {
+			var tabs = ["schedule", "students", "discussion", "announcements"];
+			for (tab in tabs) {
+				if (tabs[tab] == name) {
+					document.getElementById(tabs[tab].concat("tab")).className = "activehomenavbutton";
+					document.getElementById(tabs[tab].concat("page")).style.display = "block";
+					make_topic(name, name);
+				}
+				else {
+					document.getElementById(tabs[tab].concat("tab")).className = "homenavbutton";
+					document.getElementById(tabs[tab].concat("page")).style.display = "none";
+				}
+			}
+		}
+		
+		// functioon to choose the tet displayed on a page
+		function make_topic(name, section) {
+			var children = document.getElementById(section + "page").children;
+			var divs = [];
+			
+			for (c in children) {
+				if (children[c].className == "subpage") {
+					divs.push(children[c]);
+				}
+			}
+			
+			for (d in divs) {
+				divs[d].style.display = (divs[d].id == name + "sub") ? "block" : "none";
+			}
+		}
+	</script>
+	<!-- Date: 2011-03-05 -->
+</head>
+<body onload="make_active('announcements');">
+	<div class="header" onclick="make_active('aboutus');">
+		<img id="homelogo" height="160" src="../pics/banner_large2.png" alt="Amphibious Achievement"/>
+	</div>
+	<div id="securewrap" class="wrap">
+		<div class="navwrap">
+			<div id="homenav" class="navbar">
+   				<div id="announcementstab" class="homenavbutton" onclick="make_active('announcements');">Announcements</div>
+   				<div id="scheduletab" class="homenavbutton" onclick="make_active('schedule');">Schedule</div>
+				<div id="studentstab" class="homenavbutton" onclick="make_active('students');">Students</div>
+				<div id="discussiontab" class="homenavbutton" style="margin-bottom: 0px;" onclick="make_active('discussion');">Discussion</div>
+			</div>
+			<a id="gohomelink" class="volunteerlink" href="../">Back to Home</a>
+		</div>
+		<div id="securewrap" class="pagewrap">
+			<div id="announcementspage" class="tabpage">
+				Announcements
+			</div>
+			<div id="schedulepage" class="tabpage">
+				Schedule
+			</div>
+			<div id="studentspage" class="tabpage">
+				Students
+			</div>
+			<div id="discussionpage" class="tabpage">
+				Discussion
+			</div>
+			<div class="footer">
+				<p>Copyright &copy; 2011 Amphibious Achievement</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

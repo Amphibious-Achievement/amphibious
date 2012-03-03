@@ -1,0 +1,93 @@
+.photorow {
+	overflow: visible;
+	display: block;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 204px;
+	width: 1000px;
+}
+.photowrap {
+	display: inline-block;
+	margin-left: 24px;
+	margin-right: 24px;
+	width: 204px;
+	height: 204px;
+}
+.photowrap2 {
+	width: 204px;
+	height: 204px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.sportphotolink {
+}
+.sportphoto {
+	border: 1px solid #646464;
+	margin: 0px auto;
+	display: inline-block;
+	cursor: pointer;
+}
+.firstphotowrap {
+	margin-left: 0px;
+}
+.lastphotowrap {
+	margin-right: 0px;
+}
+#categorywrap {
+	margin-bottom: 50px;
+}
+.categorycolumn {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 286px;
+	float: left;
+}
+
+.categorycolumn2 {
+	margin-right: 286px;
+	margin-left: 286px;
+	padding: 0px;
+	border: 0px;
+	width: 286px;
+	float: left;
+}
+
+.categorypic {
+	width: 200px;
+	height: 200px;
+	margin-top: 9px;
+	margin-bottom: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #0064A9;
+	padding: 0px;
+	display: block;
+}
+
+.inactivecategorypic {
+	
+}
+.categorylabel {
+	font-size: xx-large;
+	color: black;
+	font-variant: small-caps;
+	display: block;
+	margin: 20px auto;
+	padding: 0px;
+	border: 0px;
+	text-align: center;
+}
+.activecategorypic {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 10px;
+	border-image: url(../pics/photo_border.png) 25% round;
+	-webkit-border-image: url(../pics/photo_border.png) 25% round;
+	-moz-border-image: url(../pics/photo_border.png) 25% round;
+}

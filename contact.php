@@ -68,7 +68,7 @@
 <body onLoad="setPage('contact');">
 	<div id="contactwrap" class="wrap">
 		<?php include("inc/nav3.html") ?>
-		<img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 864px; top: 100px;"/>
+		<img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 799px; top: 100px;"/>
 		<div class="pagewrap">
 			<div id="contactsub" class="subpage">
 				<div class="blurb">

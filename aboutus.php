@@ -23,7 +23,7 @@
 			function showBio(pic) {
 				pic = $(pic);
 				var person = pic.attr("alt");
-				var DOM = pic.parent();
+				var DOM = pic.parent().parent();
 				var otherBios = $(".bio", DOM.parent());
 				// check to see if this bio is already open using currentBio
 				if(person == currentBio) {
@@ -41,11 +41,17 @@
 					$.ajax("bios/" + person + "_title.txt", {async : false, success : function (data) {
 							var title = String(data);
 							newDOM.append($("<div class='biotitle' id='" + person + "'>" + title + "</div>"));
+						}, error: function(jqXHR, textStatus, errorThrown) {
+							var title = person + " | Mentor"
+							newDOM.append($("<div class='biotitle' id='" + person + "'>" + title + "</div>"));
 						}
 					});
 					var bio;
 					$.ajax("bios/" + person + ".txt", {async : false, success : function (data) {
 							var bio = String(data);
+							newDOM.append($("<div class='biocontent'>" + bio + "</div>"));
+						}, error: function(jqXHR, textStatus, errorThrown) {
+							var bio = "No bio was found."
 							newDOM.append($("<div class='biocontent'>" + bio + "</div>"));
 						}
 					});
@@ -93,7 +99,7 @@
     <body>
 		<div id="aboutwrap" class="wrap">
     		<?php include("inc/nav3.html") ?>
-	        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 460px; top: 100px;"/>
+	        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 400px; top: 100px;"/>
 	        <div class="pagewrap">
 				<!--<div class="pagecolumn1">
 					<div id="aboutussub" class="subpage">
@@ -130,7 +136,7 @@
 						<div class="subtitle" style="margin-left: 30px">Our Staff</div>
                         <div class="subtitle2" style="margin-left: 60px">Our Executive Team</div>
 		    			<div id="picrow1" class="picrow">
-                            <div class="halfbiospacer"></div>
+							<div style="display:inline-block;">
 							<img class="biophoto" src="pics/noam.PNG" alt="Noam" />
 							<img class="biophoto" src="pics/ron.PNG" alt="Ron" />
 							<img class="biophoto" src="pics/camila.PNG" alt="Camila" />
@@ -138,22 +144,16 @@
 							<img class="biophoto" src="pics/corinne.PNG" alt="Corinne" />
 							<img class="biophoto" src="pics/brian.PNG" alt="Brian" />
                             <img class="biophoto" src="pics/shilpa.PNG" alt="Shilpa" />
-							<div class="halfbiospacer"></div>
-                             
+                            </div>
 						</div>
 						<div id="picrow2" class="picrow">
-							<div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <img class="biophoto" src="pics/lila.PNG" alt="Lila" />
-							<img class="biophoto" src="pics/alice.PNG" alt="Alice" />
-							<img class="biophoto" src="pics/elina.PNG" alt="Elina" />
-                            <img class="biophoto" src="pics/nicole.PNG" alt="Nicole" />
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-							<div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
+							<div style="display:inline-block;">
+	                            <img class="biophoto" src="pics/lila.PNG" alt="Lila" />
+								<img class="biophoto" src="pics/alice.PNG" alt="Alice" />
+								<img class="biophoto" src="pics/elina.PNG" alt="Elina" />
+	                            <img class="biophoto" src="pics/nicole.PNG" alt="Nicole" />
+								<img class="biophoto" src="pics/julia.PNG" alt="Julia" />
+							</div>
 						</div>
 						
 					</div>
@@ -161,41 +161,22 @@
 						<div class="subtitle2" style="margin-left: 60px">Our Mentor Corps</div>
                         
 		    			<div id="picrow1" class="picrow">
-                            <div class="halfbiospacer"></div>
+							<div style="display:inline-block;">
 							<img class="biophoto" src="pics/jeff.PNG" alt="Jeff" />
-							<img class="biophoto" src="pics/teri.PNG" alt="Ter" />
+							<img class="biophoto" src="pics/teri.PNG" alt="Teri" />
 							<img class="biophoto" src="pics/kere.PNG" alt="Kere" />
                             <img class="biophoto" src="pics/meghan.PNG" alt="Meghan" />
 							<img class="biophoto" src="pics/marcus.PNG" alt="Marcus" />
 							<img class="biophoto" src="pics/sarah.PNG" alt="Sarah" />
-                            <img class="biophoto" src="pics/julia.PNG" alt="Julia" />
-							<div class="halfbiospacer"></div>
-                             
+							<img class="biophoto" src="pics/scotty.PNG" alt="Scotty" />
+                            </div>
 						</div>
-						<div id="picrow2" class="picrow">
-							<div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <img class="biophoto" src="pics/scotty.PNG" alt="Scotty" />
-							<img class="biophoto" src="pics/duane.PNG" alt="Duane" />
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-							<div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-                            <div class="halfbiospacer"></div>
-							<div class="halfbiospacer"></div>
-                          <div class="halfbiospacer"></div>
-						</div>
-						
 					</div>
                    <div id="whowearesub" class="subpage">
 						<div class="subtitle2" style="margin-left: 60px">Our Alumni</div>
                         
 		    			<div id="picrow1" class="picrow">
-                            <div class="halfbiospacer"></div>
+							<div style="display:inline-block;">
 							<img class="biophoto" src="pics/adie.PNG" alt="Adie" />
 							<img class="biophoto" src="pics/turner.PNG" alt="Turner" />
 							<img class="biophoto" src="pics/kim.PNG" alt="Kim" />
@@ -203,11 +184,9 @@
 							<img class="biophoto" src="pics/alex.PNG" alt="Alex" />
 							<img class="biophoto" src="pics/priscilla.PNG" alt="Priscilla" />
                             <img class="biophoto" src="pics/kaitlyn.PNG" alt="Kaitlyn" />
-							<div class="halfbiospacer"></div>
-                             
+                            </div>
 						</div>												
 					</div>
-				</div>
 				<?php include("inc/footer.htm") ?>
 			</div>
 		</div>

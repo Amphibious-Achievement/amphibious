@@ -71,16 +71,31 @@ a {
 	position: absolute;
 	top: 20px;
 	right: 5px;
-	margin-top:-10px;
+	margin-top:0px;
 	margin-right: 7px;
-	background-image:url("http://amphibious.mit.edu/pics/Donate-button-final3.png");
+	border: 0px;
     }
 	
+#donateButton {
+	background:#0080D9;
+	opacity:.6;
+	color:white;
+	margin-top:5px;
+	margin-right:20px;
+	padding:7px 30px;
+	float:right;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
 
+#donateButton:hover {
+	opacity:1;
+	background:#2ea30a;
+}
 
 .topbar span.donatebar img:hover{
-	opacity:0;
-	}
+	
+}
 	
 	/*
 	filter:alpha(opacity=50);
@@ -333,13 +348,11 @@ a {
 	margin:auto;
 }
 .newslink {
-	display: block;
 	color: black;
 	margin-bottom: 15px;
 	line-height: 100%;
 }
 .activenewslink {
-	display: block;
 	color: #0064A9;
 	margin-bottom: 15px;
 	line-height: 100%;
@@ -357,4 +370,37 @@ a {
 	margin-left: auto;
 	position: relative;
 	margin-right: auto;
+	border: 0px;
+}
+.article {
+	margin-bottom:20px;
+	padding-bottom:10px;
+	border-bottom: 1px solid black;
+}
+
+.articleTitle {
+	font-size: 20px;
+}
+.artcleLink {
+	float:left;
+	color: black;
+}
+.artcleLink:hover {
+	color: #0064A9;
+}
+.articleHolder {
+	overflow:hidden;
+	height:150px;
+	line-height:150px;
+	width:150px;
+	float:left;
+	margin-right:20px;
+	background:white;
+}
+.articlePicture {
+	overflow:hidden;
+	width:100%;
+	height:auto;
+	vertical-align:middle;
+	background:white;
 }

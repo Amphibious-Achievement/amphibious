@@ -32,7 +32,7 @@
 <body>
 	<div id="whatwedowrap" class="wrap">
 		<?php include("inc/nav3.html") ?>
-        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 553px; top: 100px;" />
+        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 485px; top: 100px;" />
         <div class="pagewrap">
         	<div class="pagecolumn1">
         		<div class="subtitle">Athletics</div>

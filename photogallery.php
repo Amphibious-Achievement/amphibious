@@ -79,7 +79,7 @@
 <body>
 	<div id="gallerywrap" class="wrap">
 		<?php include("inc/nav3.html") ?>
-        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 715px; top: 100px;" />
+        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 653px; top: 100px;" />
         <div class="pagewrap">
 	        <div id="categorywrap">
 	            <div class="categorycolumn">

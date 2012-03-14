@@ -27,7 +27,7 @@
 <body>
     <div id="homewrap" class="wrap">
         <?php include("inc/nav3.html") ?>
-        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 393px; top: 100px;"/>
+        <img class="indicator" src="/pics/indicator_minus_shadow.png" alt="Indicator" style="left: 335px; top: 100px;"/>
         <div class="headerwrap">
             <div class="piccolumn" style="border-left: 0px;">
                 <img class="headerpic" src="/pics/row_front.png" alt="Rowing" style="width: 299px; height: 298px;" />
